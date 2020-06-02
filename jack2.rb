@@ -6,8 +6,8 @@ class Jack2 < Formula
 
   def install
     system "./waf", "configure"
-    system "./waf"
-    system "./waf", "install"
+    system "sudo", "./waf"
+    system "sudo", "./waf", "install"
   end
 
   test do
