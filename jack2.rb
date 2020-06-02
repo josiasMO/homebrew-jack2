@@ -5,9 +5,9 @@ class Jack2 < Formula
   sha256 "a20a32366780c0061fd58fbb5f09e514ea9b7ce6e53b080a44b11a558a83217c"
 
   def install
-    system "./waf", "configure"
-    system "sudo", "./waf"
-    system "sudo", "./waf", "install"
+    system "./waf configure"
+    system "./waf"
+    system "./waf install"
   end
 
   test do
