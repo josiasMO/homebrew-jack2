@@ -7,8 +7,8 @@ class Jack2 < Formula
   def install
     system "./waf", "configure"
     system "./waf"
-    system "chown", "josias:admin", "/usr/local/lib/libjackserver.dylib" 
     system "whoami"
+    system "chown", "josias:admin", "/usr/local/lib/libjackserver.dylib" 
     #system "./waf", "install"
   end
 
